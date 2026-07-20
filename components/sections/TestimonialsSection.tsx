@@ -7,19 +7,19 @@ import { SecondaryButton } from "@/components/shared/SecondaryButton";
 
 const testimonials = [
   {
-    name: "Ibrahim Musa",
+    name: "Ibrahim Hamisu",
     role: "SIWES Student",
     testimonial:
       "The SIWES programme gave me practical experience that I couldn't get in the classroom. I left with confidence and real projects.",
   },
   {
-    name: "Fatima Ali",
+    name: "Aisha Faruk Sambo",
     role: "Business Owner",
     testimonial:
       "AZMAK has been our trusted partner for printing and document services. The quality and professionalism are outstanding.",
   },
   {
-    name: "Aisha Bello",
+    name: "Hafsat Nuraddeen ",
     role: "Python Student",
     testimonial:
       "The mentors were patient, supportive and always willing to help. I learned by building real projects.",
