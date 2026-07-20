@@ -25,36 +25,30 @@ export function Navbar() {
       transition={{
         duration: 0.5,
       }}
-      className="fixed top-0 inset-x-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur"
+      className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur"
     >
       <Container>
         <div className="flex h-20 items-center justify-between">
-
           <Logo />
 
           <DesktopNav />
 
-          <div className="hidden lg:flex items-center gap-4">
-
+          <div className="hidden items-center gap-4 lg:flex">
             <Button
               variant="outline"
-              asChild
+              render={<Link href="/login" />}
             >
-              <Link href="/login">
-                Login
-              </Link>
+              Login
             </Button>
 
-            <Button asChild>
-              <Link href="/siwes/apply">
-                Apply for SIWES
-              </Link>
+            <Button
+              render={<Link href="/siwes/apply" />}
+            >
+              Apply for SIWES
             </Button>
-
           </div>
 
           <MobileNav />
-
         </div>
       </Container>
     </motion.header>

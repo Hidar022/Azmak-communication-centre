@@ -14,7 +14,7 @@ export function PrimaryButton({
 }: PrimaryButtonProps) {
   return (
     <Button
-      asChild
+      render={<Link href={href} />}
       size="lg"
       className="
         h-12
@@ -29,10 +29,8 @@ export function PrimaryButton({
         hover:-translate-y-0.5
       "
     >
-      <Link href={href}>
-        {children}
-        <ArrowRight className="ml-2 h-4 w-4" />
-      </Link>
+      {children}
+      <ArrowRight className="ml-2 h-4 w-4" />
     </Button>
   );
 }

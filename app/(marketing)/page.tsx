@@ -1,12 +1,12 @@
-import { PageWrapper } from "@/components/layout/PageWrapper";
-import { Navbar } from "@/components/navbar/Navbar";
+import { Container } from "@/components/layout/Container";
+import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/hero/Hero";
 
 export default function HomePage() {
   return (
-    <PageWrapper>
+    <Container>
       <Navbar />
       <Hero />
-    </PageWrapper>
+    </Container>
   );
 }

@@ -75,29 +75,23 @@ export function ServicesHero() {
 
             <div className="mt-10 flex flex-wrap gap-4">
 
-              <Button
-                asChild
-                size="lg"
-                className="bg-blue-600 hover:bg-blue-700"
-              >
-                <Link href="/contact">
-                  Contact Us
+             <Button
+            render={<Link href="/contact" />}
+            size="lg"
+            className="bg-blue-600 hover:bg-blue-700"
+            >
+            Contact Us
+            <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
 
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-
-              <Button
-                variant="outline"
-                size="lg"
-                asChild
-              >
-                <Link href="tel:+2340000000000">
-                  <PhoneCall className="mr-2 h-4 w-4" />
-
-                  Call Now
-                </Link>
-              </Button>
+            <Button
+            render={<Link href="tel:+2340000000000" />}
+            variant="outline"
+            size="lg"
+            >
+            <PhoneCall className="mr-2 h-4 w-4" />
+            Call Now
+            </Button>
 
             </div>
           </motion.div>

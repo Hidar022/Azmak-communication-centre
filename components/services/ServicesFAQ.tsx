@@ -72,26 +72,22 @@ export function ServicesFAQ() {
         </div>
 
         <div className="mx-auto mt-16 max-w-4xl rounded-3xl border border-slate-200 bg-white p-4 shadow-sm">
-          <Accordion
-            type="single"
-            collapsible
-            className="w-full"
-          >
+        <Accordion className="w-full border-0">
             {faqs.map((faq, index) => (
-              <AccordionItem
+            <AccordionItem
                 key={index}
                 value={`item-${index}`}
-              >
+            >
                 <AccordionTrigger className="text-left text-lg font-semibold">
-                  {faq.question}
+                {faq.question}
                 </AccordionTrigger>
 
                 <AccordionContent className="text-base leading-7 text-slate-600">
-                  {faq.answer}
+                {faq.answer}
                 </AccordionContent>
-              </AccordionItem>
+            </AccordionItem>
             ))}
-          </Accordion>
+        </Accordion>
         </div>
       </Container>
     </section>

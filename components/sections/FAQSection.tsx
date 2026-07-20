@@ -58,27 +58,23 @@ export function FAQSection() {
         />
 
         <div className="mx-auto mt-16 max-w-4xl rounded-3xl border border-slate-200 bg-white p-2 shadow-sm">
-          <Accordion
-            type="single"
-            collapsible
-            className="w-full"
-          >
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-              >
-                <AccordionTrigger className="px-6 text-left text-lg font-semibold">
-                  {faq.question}
-                </AccordionTrigger>
+        <Accordion className="w-full">
+          {faqs.map((faq, index) => (
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+            >
+              <AccordionTrigger className="px-6 text-left text-lg font-semibold">
+                {faq.question}
+              </AccordionTrigger>
 
-                <AccordionContent className="px-6 pb-6 text-slate-600 leading-7">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+              <AccordionContent className="px-6 pb-6 text-slate-600 leading-7">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
       </Container>
     </section>
   );

@@ -13,14 +13,12 @@ export function SecondaryButton({
 }: SecondaryButtonProps) {
   return (
     <Button
-      asChild
+      render={<Link href={href} />}
       variant="outline"
       size="lg"
       className="h-12 rounded-xl px-6"
     >
-      <Link href={href}>
-        {children}
-      </Link>
+      {children}
     </Button>
   );
 }

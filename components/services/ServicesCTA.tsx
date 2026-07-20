@@ -42,26 +42,21 @@ export function ServicesCTA() {
 
           <div className="mt-12 flex flex-wrap justify-center gap-5">
             <Button
-              asChild
-              size="lg"
-              className="bg-white text-blue-700 hover:bg-blue-50"
+            render={<Link href="/contact" />}
+            size="lg"
+            className="bg-blue-600 hover:bg-blue-700"
             >
-              <Link href="/contact">
-                Contact Us
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+            Contact Us
+            <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
 
             <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="border-white bg-transparent text-white hover:bg-white hover:text-blue-700"
+            render={<Link href="tel:+234000000 0000" />}
+            variant="outline"
+            size="lg"
             >
-              <Link href="/contact">
-                <MapPin className="mr-2 h-4 w-4" />
-                Visit Our Centre
-              </Link>
+            <Phone className="mr-2 h-4 w-4" />
+            Call Now
             </Button>
           </div>
 
